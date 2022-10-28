@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var caminhao_1 = require("./caminhao");
+var moto_1 = require("./moto");
+var caminhao1;
+var Moto1;
+caminhao1 = new caminhao_1.caminhao();
+Moto1 = new moto_1.moto();
+caminhao1.cor = 'vermelho';
+caminhao1.modelo = 'Carga XT';
+caminhao1.fabricante = 'Volvo';
+Moto1.cor = 'verde';
+Moto1.modelo = 'AZ 400';
+Moto1.fabricante = 'kawasaki';
+console.log("A moto ".concat(Moto1.modelo, " est\u00E1"));
+Moto1.acelerar(80);
+console.log("O caminh\u00E3o ".concat(caminhao1.modelo, " est\u00E1"));
+caminhao1.descarregar();
