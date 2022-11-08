@@ -1,20 +1,2 @@
-<p><b>{{tituloPagina}}</b></p>
-<br>
-
-<div class="container">
-<button class="btn btn primary" (click)="mudar()">{{nomeButton}}</button>
-
-<div class="row">
-<div class="col-4" *ngFor="let exiba of imagens; index as i">
-    <div *ngIf="controle == true || i%2 == 0">
-    <div class="card mt-5" style="width: 18 rem;">
-    <img class="card-img-top" [src]="exiba.img" alt="" width="500px" height="500px">
-    <div class="card-body bg-dark text-center text-light">
-        <h2 class="card-text">{{exiba.titulo}}</h2>
-    </div>
-    <!--<p>{{exiba.titulo}} Index: {{i}}</p>-->
-    </div>
-</div>
-</div>
-</div>
-</div>
+<!--Deixa às imagens responsivas-->
+<img class="img-fluid" alt="" [src]="imagem" alt="" style="height: 350px; width: 450px;" >

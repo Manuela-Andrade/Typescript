@@ -7,16 +7,16 @@
     height: 50px;
     position: fixed;
 }
-ul {
+/* ul {
     list-style-type: none;
     display: block;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #dad6d694;
-}
+} */
 
-li {
+/* li {
     float: left;
     display: inline;
 
@@ -37,3 +37,4 @@ li a {
 li a:hover {
     background-color: white;
 }
+ */
