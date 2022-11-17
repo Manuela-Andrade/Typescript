@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'pho-root',
@@ -8,3 +9,4 @@ export class AppComponent {
   title = 'photos';
   imagens = [];
 }
+

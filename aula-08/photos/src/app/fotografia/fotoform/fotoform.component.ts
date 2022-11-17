@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'pho-fotoform',
@@ -6,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FotoformComponent implements OnInit {
 
-  constructor() { }
+  formulario!:FormGroup;
+
+  constructor(private formBuilder: FormBuilder){ }
 
   ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      imagem:[''],
+      titulo:['']
+    });
   }
-
+  
+   //Metodo de Cadastro
+  cadastrar(form: any){
+    console.log(form.value);
+  } 
+  
 }
+ 
